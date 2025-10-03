@@ -8,7 +8,10 @@ NUM_SENSORS = 8
 Filtered distance signals
 Response is slow, about 1-2 seconds. But does change as expected when tested with a checkerboard. 
 """
-TARGET_SIGNALS = {f"sens{str(i).zfill(2)}De1FilteredDistance": -1 for i in range(1, 9)}
+TARGET_SIGNALS = {
+    f"sens{str(i).zfill(2)}De1FilteredDistance": -1 for i in range(1, 9)
+}  # use unfiltered for better response.
+# TODO this is currently unused and needs to be fully centralised
 # Additional signals that seem to be from the first sensor
 TARGET_SIGNALS["Dist1"] = -1
 
