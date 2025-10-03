@@ -5,7 +5,7 @@ Needs a rework, cleanup and extract configs to a config file.
 But it is what it is. Gotta move fast
 """
 
-from can_reader import CANReaderN
+from can_reader import CANReader
 from dbc_decoder import DBCDecoder
 from visualizer import Visualizer
 
@@ -15,26 +15,23 @@ from rich.table import Table
 import logging
 import os
 
+from config import (
+    TARGET_SIGNALS,
+    LOG_DIR,
+    LOG_FILE_PATH,
+    DBC_FILE_PATH,
+    TABLE_UPDATE_INTERVAL,
+    NUM_SENSORS,
+)
+
 console = Console()
 
-"""
-Filtered distance signals
-Response is slow, about 1-2 seconds. But does change as expected when tested with a checkerboard. 
-"""
-TARGET_SIGNALS = {f"sens{str(i).zfill(2)}De1FilteredDistance": -1 for i in range(1, 9)}
-# TARGET_SIGNALS = {f"sens{str(i).zfill(2)}De1Distance": -1 for i in range(0, 13)} # unfiltered is quite noisy
-
-TARGET_SIGNALS["Dist1"] = (
-    -1
-)  # don't know why this is named differently in the DBC but it seems to correspond to sens01De1Distance
 filtered_signals = TARGET_SIGNALS
 
 # Set up logger to write decoded signals to ../logs/run_logs.txt
-log_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../logs"))
-os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, "run_logs.txt")
+os.makedirs(LOG_DIR, exist_ok=True)
 logging.basicConfig(
-    filename=log_file,
+    filename=LOG_FILE_PATH,
     filemode="a",
     format="%(asctime)s %(levelname)s: %(message)s",
     level=logging.INFO,
@@ -44,10 +41,8 @@ logger = logging.getLogger("decoded_signals")
 
 def main():
     reader = CANReader()
-    decoder = DBCDecoder(
-        "../dbc/OX-004282_BEG_USS_COTS_V2_CAN_Matrix_external.dbc"
-    )  # TODO: Replace hardcoded path.
-    vis = Visualizer(num_sensors=8)
+    decoder = DBCDecoder(DBC_FILE_PATH)  # TODO: Replace hardcoded path.
+    vis = Visualizer(num_sensors=NUM_SENSORS)
 
     import time
 
@@ -57,7 +52,7 @@ def main():
 
     try:
         last_table_update = 0
-        update_interval = 0.2  # 200ms
+        update_interval = TABLE_UPDATE_INTERVAL  # 200ms
 
         while True:
             frame = reader.read_message()
