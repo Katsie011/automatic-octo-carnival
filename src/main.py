@@ -10,7 +10,16 @@ import os
 
 console = Console()
 
-TARGET_SIGNALS = {f"sens{str(i).zfill(2)}De1FilteredDistance": -1 for i in range(0, 13)}
+"""
+Filtered distance signals
+Response is slow, about 1-2 seconds. But does change as expected when tested with a checkerboard. 
+"""
+TARGET_SIGNALS = {f"sens{str(i).zfill(2)}De1FilteredDistance": -1 for i in range(1, 9)}
+# TARGET_SIGNALS = {f"sens{str(i).zfill(2)}De1Distance": -1 for i in range(0, 13)} # unfiltered is quite noisy
+
+TARGET_SIGNALS["Dist1"] = (
+    -1
+)  # don't know why this is named differently in the DBC but it seems to correspond to sens01De1Distance
 filtered_signals = TARGET_SIGNALS
 
 # Set up logger to write decoded signals to ../logs/run_logs.txt
