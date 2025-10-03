@@ -1,0 +1,1208 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PF_PP HMI CUST USS_ECU Vector__XXXXX
+
+
+BO_ 2564487807 msgD_RS_PF_PP: 8 USS_ECU
+ SG_ sigD_RS_PF_PP : 0|64@1+ (1,0) [0|0] ""  CUST
+
+BO_ 2564456442 msgD_RQ_PF_PP_Phys: 8 CUST
+ SG_ sigD_RQ_PF_PP_Phys : 0|64@1+ (1,0) [0|0] ""  USS_ECU
+
+BO_ 2566851070 TLA: 3 Vector__XXX
+ SG_ signalTLA : 0|24@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566902014 msgVehicleData1: 8 Vector__XXX
+ SG_ MessageCounter_msgVehicleData1 : 8|2@1+ (1,0) [0|3] ""  USS_ECU
+ SG_ CRC_msgVehicleData1 : 56|8@1+ (1,0) [0|255] ""  USS_ECU
+ SG_ OutsideTemperature : 0|7@1+ (1,-40) [-40|87] "°C"  USS_ECU
+
+BO_ 2566889726 USS_CE_Left: 8 Vector__XXX
+ SG_ Multiplex_ID_CE_Left M : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ sens02CeLeftAmplitude2 m2 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens02CeLeft2Distance m2 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens02CeLeftAmplitude1 m2 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens02CeLeft1Distance m2 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens03CeLeftAmplitude2 m3 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03CeLeft2Distance m3 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens03CeLeftAmplitude1 m3 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03CeLeft1Distance m3 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens04CeLeftAmplitude2 m4 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04CeLeft2Distance m4 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens04CeLeftAmplitude1 m4 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04CeLeft1Distance m4 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05CeLeftAmplitude2 m5 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens05CeLeft2Distance m5 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05CeLeftAmplitude1 m5 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens05CeLeft1Distance m5 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06CeLeftAmplitude2 m6 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens06CeLeft2Distance m6 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06CeLeftAmplitude1 m6 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens06CeLeft1Distance m6 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07CeLeftAmplitude2 m7 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens07CeLeft2Distance m7 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07CeLeftAmplitude1 m7 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens07CeLeft1Distance m7 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08CeLeftAmplitude2 m8 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens08CeLeft2Distance m8 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08CeLeftAmplitude1 m8 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens08CeLeft1Distance m8 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09CeLeftAmplitude2 m9 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens09CeLeft2Distance m9 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09CeLeftAmplitude1 m9 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens09CeLeft1Distance m9 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10CeLeftAmplitude2 m10 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens10CeLeft2Distance m10 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10CeLeftAmplitude1 m10 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens10CeLeft1Distance m10 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11CeLeftAmplitude2 m11 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens11CeLeft2Distance m11 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11CeLeftAmplitude1 m11 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens11CeLeft1Distance m11 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens12CeLeftAmplitude2 m12 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens12CeLeft2Distance m12 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens12CeLeftAmplitude1 m12 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens12CeLeft1Distance m12 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+
+BO_ 2566889982 USS_CE_Right: 8 Vector__XXX
+ SG_ Multiplex_ID_CE_Right M : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ sens01CeRightAmplitude2 m1 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens01CeRight2Distance m1 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens01CeRightAmplitude1 m1 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens01CeRight1Distance m1 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens02CeRightAmplitude2 m2 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens02CeRight2Distance m2 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens02CeRightAmplitude1 m2 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens02CeRight1Distance m2 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens03CeRightAmplitude2 m3 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03CeRight2Distance m3 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens03CeRightAmplitude1 m3 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03CeRight1Distance m3 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens04CeRightAmplitude2 m4 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04CeRight2Distance m4 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens04CeRightAmplitude1 m4 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04CeRight1Distance m4 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05CeRightAmplitude2 m5 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens05CeRight2Distance m5 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05CeRightAmplitude1 m5 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens05CeRight1Distance m5 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06CeRightAmplitude2 m6 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens06CeRight2Distance m6 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06CeRightAmplitude1 m6 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens06CeRight1Distance m6 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07CeRightAmplitude2 m7 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens07CeRight2Distance m7 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07CeRightAmplitude1 m7 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens07CeRight1Distance m7 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08CeRightAmplitude2 m8 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens08CeRight2Distance m8 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08CeRightAmplitude1 m8 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens08CeRight1Distance m8 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09CeRightAmplitude2 m9 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens09CeRight2Distance m9 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09CeRightAmplitude1 m9 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens09CeRight1Distance m9 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10CeRightAmplitude2 m10 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens10CeRight2Distance m10 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10CeRightAmplitude1 m10 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens10CeRight1Distance m10 : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11CeRightAmplitude2 m11 : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens11CeRight2Distance m11 : 16|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11CeRightAmplitude1 m11 : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens11CeRight1Distance m11 : 0|10@1+ (1,0) [0|1023] "cm"  Vector__XXXXX
+
+BO_ 2566883838 USS_MAP_OBJ_10: 8 Vector__XXX
+ SG_ Multiplex_ID_10 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MessageCounter_Map_Obj_10 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_10 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_10 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_20_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_20_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_20_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_20_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_20_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_20_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_10_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_10_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_10_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_10_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_10_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_10_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+
+BO_ 2566883582 USS_MAP_OBJ_09: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_09 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_09 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_09 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_19_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_19_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_19_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_19_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_19_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_19_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_09_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_09_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_09_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_09_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_09_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_09_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_09 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566883326 USS_MAP_OBJ_08: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_08 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_08 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_08 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_18_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_18_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_18_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_18_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_18_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_18_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_08_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_08_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_08_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_08_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_08_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_08_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_08 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566883070 USS_MAP_OBJ_07: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_07 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_07 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_07 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_17_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_17_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_17_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_17_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_17_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_17_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_07_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_07_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_07_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_07_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_07_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_07_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_07 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566882814 USS_MAP_OBJ_06: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_06 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_06 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_06 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_16_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_16_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_16_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_16_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_16_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_16_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_06_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_06_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_06_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_06_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_06_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_06_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_06 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566882558 USS_MAP_OBJ_05: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_05 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_05 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_05 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_15_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_15_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_15_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_15_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_15_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_15_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_05_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_05_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_05_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_05_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_05_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_05_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_05 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566882046 USS_MAP_OBJ_03: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_03 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_03 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_03 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_13_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_13_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_13_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_13_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_13_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_13_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_03_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_03_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_03_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_03_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_03_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_03_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_03 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566882302 USS_MAP_OBJ_04: 8 Vector__XXX
+ SG_ Multiplex_ID_04 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MessageCounter_Map_Obj_04 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_04 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_04 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_14_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_14_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_14_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_14_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_14_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_14_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_04_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_04_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_04_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_04_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_04_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_04_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+
+BO_ 2566881790 USS_MAP_OBJ_02: 8 Vector__XXX
+ SG_ Multiplex_ID_02 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MessageCounter_Map_Obj_02 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_02 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_02 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_12_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_12_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_12_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_12_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_12_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_12_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_02_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_02_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_02_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_02_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_02_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_02_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+
+BO_ 2566881534 USS_MAP_OBJ_01: 8 Vector__XXX
+ SG_ MessageCounter_Map_Obj_01 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_01_Map_Obj_01 m1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_00_Map_Obj_01 m0 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAP_11_ObjectType m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_11_ExistProbability m1 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_11_2ndPointY m1 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_11_2ndPointX m1 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_11_1stPointY m1 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_11_1stPointX m1 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_01_1stPointY m0 : 10|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_01_ObjectType m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_01_ExistProbability m0 : 20|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ MAP_01_2ndPointY m0 : 33|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_01_2ndPointX m0 : 23|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ MAP_01_1stPointX m0 : 0|10@1- (2,0) [-1024|1022] "cm" Vector__XXX
+ SG_ Multiplex_ID_01 M : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566880766 USS_MaxDetRange: 8 Vector__XXX
+ SG_ CRC_MaxDetRange : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MessageCntr_MaxDetRange : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ sens12_MaxDetRange : 44|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens11_MaxDetRange : 40|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens10_MaxDetRange : 36|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens09_MaxDetRange : 32|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens08_MaxDetRange : 28|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens07_MaxDetRange : 24|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens06_MaxDetRange : 20|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens05_MaxDetRange : 16|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens04_MaxDetRange : 12|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens03_MaxDetRange : 8|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens02_MaxDetRange : 4|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+ SG_ sens01_MaxDetRange : 0|4@1+ (36.667,0) [0|550.005] "" Vector__XXX
+
+BO_ 2566880510 USS_InfoSignal: 8 Vector__XXX
+ SG_ FailureStatus : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ OperatingModeInfo : 6|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ SensorFaulted : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SensitivityInfo : 29|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ SensorBlindnessInfo : 17|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ OutsideTemperatureInfo : 9|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ SendingPatternInfo : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ NumberSensorsInfo : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCntr_USSInfoSig : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_USSInfoSig : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566880254 USS_DEMsg_Sens_12: 8 Vector__XXX
+ SG_ sens12FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_12 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_12 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens12De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens12De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens12De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens12Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens12Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566879998 USS_DEMsg_Sens_11: 8 Vector__XXX
+ SG_ sens11FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_11 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_11 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens11De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens11Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens11Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566879742 USS_DEMsg_Sens_10: 8 Vector__XXX
+ SG_ sens10FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_10 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_10 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens10De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens10Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens10Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566879486 USS_DEMsg_Sens_09: 8 Vector__XXX
+ SG_ sens09FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_09 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_09 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens09De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens09Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens09Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566879230 USS_DEMsg_Sens_08: 8 Vector__XXX
+ SG_ sens08FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_08 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_08 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens08De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens08Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens08Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566878974 USS_DEMsg_Sens_07: 8 Vector__XXX
+ SG_ sens07FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_07 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_07 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens07De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens07Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens07Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566878718 USS_DEMsg_Sens_06: 8 Vector__XXX
+ SG_ sens06FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_06 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_06 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens06De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens06Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens06Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566878462 USS_DEMsg_Sens_05: 8 Vector__XXX
+ SG_ sens05Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens05FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_05 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_05 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens05De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens05Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566878206 USS_DEMsg_Sens_04: 8 Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_04 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_04 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens04FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens04De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens04De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens04De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+
+BO_ 2566877950 USS_DEMsg_Sens_03: 8 Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_03 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_03 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens03FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens03De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens03De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens03De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+
+BO_ 2566877694 USS_DEMsg_Sens_02: 8 Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_02 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_02 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens02De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens02Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens02FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens02De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens02De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens02Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+BO_ 2566877438 USS_DEMsg_Sens_01: 8 Vector__XXX
+ SG_ sens01FilteredAmplitude1 : 42|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MessageCounter_DEMsg_Sens_01 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CRC_DEMsg_Sens_01 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sens01De1FilteredDistance : 20|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens01De2Distance : 10|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens01De1Distance : 0|10@1+ (1,0) [0|1023] "cm" Vector__XXX
+ SG_ sens01Amplitude2 : 36|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ sens01Amplitude1 : 30|6@1+ (1,0) [0|63] "" Vector__XXX
+
+
+
+CM_ BO_ 2566851070 "TLA";
+CM_ SG_ 2566851070 signalTLA "signal TLA";
+CM_ BO_ 2566902014 "Input Message from customer";
+CM_ SG_ 2566902014 MessageCounter_msgVehicleData1 "Counter";
+CM_ SG_ 2566902014 CRC_msgVehicleData1 "CRC";
+CM_ SG_ 2566902014 OutsideTemperature "Input signal for outside temperature";
+CM_ BO_ 2566889726 "Cross echo left data of all sensors ";
+CM_ SG_ 2566889726 Multiplex_ID_CE_Left "Multiplexer";
+CM_ SG_ 2566889726 sens02CeLeftAmplitude2 "Amplitude of sens02CeLeft2Distance";
+CM_ SG_ 2566889726 sens02CeLeft2Distance "Cross echo left data of sensor 2";
+CM_ SG_ 2566889726 sens02CeLeftAmplitude1 "Amplitude of sens02CeLeft1Distance";
+CM_ SG_ 2566889726 sens02CeLeft1Distance "Cross echo left data of sensor 2";
+CM_ SG_ 2566889726 sens03CeLeftAmplitude2 "Amplitude of sens03CeLeft2Distance";
+CM_ SG_ 2566889726 sens03CeLeft2Distance "Cross echo left data of sensor 3";
+CM_ SG_ 2566889726 sens03CeLeftAmplitude1 "Amplitude of sens03CeLeft1Distance";
+CM_ SG_ 2566889726 sens03CeLeft1Distance "Cross echo left data of sensor 3";
+CM_ SG_ 2566889726 sens04CeLeftAmplitude2 "Amplitude of sens04CeLeft2Distance";
+CM_ SG_ 2566889726 sens04CeLeft2Distance "Cross echo left data of sensor 4";
+CM_ SG_ 2566889726 sens04CeLeftAmplitude1 "Amplitude of sens04CeLeft1Distance";
+CM_ SG_ 2566889726 sens04CeLeft1Distance "Cross echo left data of sensor 4";
+CM_ SG_ 2566889726 sens05CeLeftAmplitude2 "Amplitude of sens05CeLeft2Distance";
+CM_ SG_ 2566889726 sens05CeLeft2Distance "Cross echo left data of sensor 5";
+CM_ SG_ 2566889726 sens05CeLeftAmplitude1 "Amplitude of sens05CeLeft1Distance";
+CM_ SG_ 2566889726 sens05CeLeft1Distance "Cross echo left data of sensor 5";
+CM_ SG_ 2566889726 sens06CeLeftAmplitude2 "Amplitude of sens06CeLeft2Distance";
+CM_ SG_ 2566889726 sens06CeLeft2Distance "Cross echo left data of sensor 6";
+CM_ SG_ 2566889726 sens06CeLeftAmplitude1 "Amplitude of sens06CeLeft1Distance";
+CM_ SG_ 2566889726 sens06CeLeft1Distance "Cross echo left data of sensor 6";
+CM_ SG_ 2566889726 sens07CeLeftAmplitude2 "Amplitude of sens07CeLeft2Distance";
+CM_ SG_ 2566889726 sens07CeLeft2Distance "Cross echo left data of sensor 7";
+CM_ SG_ 2566889726 sens07CeLeftAmplitude1 "Amplitude of sens07CeLeft1Distance";
+CM_ SG_ 2566889726 sens07CeLeft1Distance "Cross echo left data of sensor 7";
+CM_ SG_ 2566889726 sens08CeLeftAmplitude2 "Amplitude of sens08CeLeft2Distance";
+CM_ SG_ 2566889726 sens08CeLeft2Distance "Cross echo left data of sensor 8";
+CM_ SG_ 2566889726 sens08CeLeftAmplitude1 "Amplitude of sens08CeLeft1Distance";
+CM_ SG_ 2566889726 sens08CeLeft1Distance "Cross echo left data of sensor 8";
+CM_ SG_ 2566889726 sens09CeLeftAmplitude2 "Amplitude of sens09CeLeft2Distance";
+CM_ SG_ 2566889726 sens09CeLeft2Distance "Cross echo left data of sensor 9";
+CM_ SG_ 2566889726 sens09CeLeftAmplitude1 "Amplitude of sens09CeLeft1Distance";
+CM_ SG_ 2566889726 sens09CeLeft1Distance "Cross echo left data of sensor 9";
+CM_ SG_ 2566889726 sens10CeLeftAmplitude2 "Amplitude of sens10CeLeft2Distance";
+CM_ SG_ 2566889726 sens10CeLeft2Distance "Cross echo left data of sensor 10";
+CM_ SG_ 2566889726 sens10CeLeftAmplitude1 "Amplitude of sens10CeLeft1Distance";
+CM_ SG_ 2566889726 sens10CeLeft1Distance "Cross echo left data of sensor 10";
+CM_ SG_ 2566889726 sens11CeLeftAmplitude2 "Amplitude of sens11CeLeft2Distance";
+CM_ SG_ 2566889726 sens11CeLeft2Distance "Cross echo left data of sensor 11";
+CM_ SG_ 2566889726 sens11CeLeftAmplitude1 "Amplitude of sens11CeLeft1Distance";
+CM_ SG_ 2566889726 sens11CeLeft1Distance "Cross echo left data of sensor 11";
+CM_ SG_ 2566889726 sens12CeLeftAmplitude2 "Amplitude of sens12CeLeft2Distance";
+CM_ SG_ 2566889726 sens12CeLeft2Distance "Cross echo left data of sensor 12";
+CM_ SG_ 2566889726 sens12CeLeftAmplitude1 "Amplitude of sens12CeLeft1Distance";
+CM_ SG_ 2566889726 sens12CeLeft1Distance "Cross echo left data of sensor 12";
+CM_ BO_ 2566889982 "Cross echo right data of all sensors";
+CM_ SG_ 2566889982 Multiplex_ID_CE_Right "Multiplexer";
+CM_ SG_ 2566889982 sens01CeRightAmplitude2 "Amplitude of sens01CeRight2Distance";
+CM_ SG_ 2566889982 sens01CeRight2Distance "Cross echo Right data of sensor 1";
+CM_ SG_ 2566889982 sens01CeRightAmplitude1 "Amplitude of sens01CeRight1Distance";
+CM_ SG_ 2566889982 sens01CeRight1Distance "Cross echo Right data of sensor 1";
+CM_ SG_ 2566889982 sens02CeRightAmplitude2 "Amplitude of sens02CeRight2Distance";
+CM_ SG_ 2566889982 sens02CeRight2Distance "Cross echo Right data of sensor 2";
+CM_ SG_ 2566889982 sens02CeRightAmplitude1 "Amplitude of sens02CeRight1Distance";
+CM_ SG_ 2566889982 sens02CeRight1Distance "Cross echo Right data of sensor 2";
+CM_ SG_ 2566889982 sens03CeRightAmplitude2 "Amplitude of sens03CeRight2Distance";
+CM_ SG_ 2566889982 sens03CeRight2Distance "Cross echo Right data of sensor 3";
+CM_ SG_ 2566889982 sens03CeRightAmplitude1 "Amplitude of sens03CeRight1Distance";
+CM_ SG_ 2566889982 sens03CeRight1Distance "Cross echo Right data of sensor 3";
+CM_ SG_ 2566889982 sens04CeRightAmplitude2 "Amplitude of sens04CeRight2Distance";
+CM_ SG_ 2566889982 sens04CeRight2Distance "Cross echo Right data of sensor 4";
+CM_ SG_ 2566889982 sens04CeRightAmplitude1 "Amplitude of sens04CeRight1Distance";
+CM_ SG_ 2566889982 sens04CeRight1Distance "Cross echo Right data of sensor 4";
+CM_ SG_ 2566889982 sens05CeRightAmplitude2 "Amplitude of sens05CeRight2Distance";
+CM_ SG_ 2566889982 sens05CeRight2Distance "Cross echo Right data of sensor 5";
+CM_ SG_ 2566889982 sens05CeRightAmplitude1 "Amplitude of sens05CeRight1Distance";
+CM_ SG_ 2566889982 sens05CeRight1Distance "Cross echo Right data of sensor 5";
+CM_ SG_ 2566889982 sens06CeRightAmplitude2 "Amplitude of sens06CeRight2Distance";
+CM_ SG_ 2566889982 sens06CeRight2Distance "Cross echo Right data of sensor 6";
+CM_ SG_ 2566889982 sens06CeRightAmplitude1 "Amplitude of sens06CeRight1Distance";
+CM_ SG_ 2566889982 sens06CeRight1Distance "Cross echo Right data of sensor 6";
+CM_ SG_ 2566889982 sens07CeRightAmplitude2 "Amplitude of sens07CeRight2Distance";
+CM_ SG_ 2566889982 sens07CeRight2Distance "Cross echo Right data of sensor 7";
+CM_ SG_ 2566889982 sens07CeRightAmplitude1 "Amplitude of sens07CeRight1Distance";
+CM_ SG_ 2566889982 sens07CeRight1Distance "Cross echo Right data of sensor 7";
+CM_ SG_ 2566889982 sens08CeRightAmplitude2 "Amplitude of sens08CeRight2Distance";
+CM_ SG_ 2566889982 sens08CeRight2Distance "Cross echo Right data of sensor 8";
+CM_ SG_ 2566889982 sens08CeRightAmplitude1 "Amplitude of sens08CeRight1Distance";
+CM_ SG_ 2566889982 sens08CeRight1Distance "Cross echo Right data of sensor 8";
+CM_ SG_ 2566889982 sens09CeRightAmplitude2 "Amplitude of sens09CeRight2Distance";
+CM_ SG_ 2566889982 sens09CeRight2Distance "Cross echo Right data of sensor 9";
+CM_ SG_ 2566889982 sens09CeRightAmplitude1 "Amplitude of sens09CeRight1Distance";
+CM_ SG_ 2566889982 sens09CeRight1Distance "Cross echo Right data of sensor 9";
+CM_ SG_ 2566889982 sens10CeRightAmplitude2 "Amplitude of sens10CeRight2Distance";
+CM_ SG_ 2566889982 sens10CeRight2Distance "Cross echo Right data of sensor 10";
+CM_ SG_ 2566889982 sens10CeRightAmplitude1 "Amplitude of sens10CeRight1Distance";
+CM_ SG_ 2566889982 sens10CeRight1Distance "Cross echo Right data of sensor 10";
+CM_ SG_ 2566889982 sens11CeRightAmplitude2 "Amplitude of sens11CeRight2Distance";
+CM_ SG_ 2566889982 sens11CeRight2Distance "Cross echo Right data of sensor 11";
+CM_ SG_ 2566889982 sens11CeRightAmplitude1 "Amplitude of sens11CeRight1Distance";
+CM_ SG_ 2566889982 sens11CeRight1Distance "Cross echo Right data of sensor 11";
+CM_ BO_ 2566883838 "MAP: infos for objects 10 and 20";
+CM_ SG_ 2566883838 Multiplex_ID_10 "Multiplexer";
+CM_ SG_ 2566883838 MessageCounter_Map_Obj_10 "Counter";
+CM_ SG_ 2566883838 CRC_01_Map_Obj_10 "CRC";
+CM_ SG_ 2566883838 CRC_00_Map_Obj_10 "CRC";
+CM_ SG_ 2566883838 MAP_20_ObjectType "Object type";
+CM_ SG_ 2566883838 MAP_20_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883838 MAP_20_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883838 MAP_20_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883838 MAP_20_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883838 MAP_20_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883838 MAP_10_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883838 MAP_10_ObjectType "Object type";
+CM_ SG_ 2566883838 MAP_10_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883838 MAP_10_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883838 MAP_10_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883838 MAP_10_1stPointX "X coordinate of the first point of the object";
+CM_ BO_ 2566883582 "MAP: infos for objects 9 and 19";
+CM_ SG_ 2566883582 MessageCounter_Map_Obj_09 "Counter";
+CM_ SG_ 2566883582 CRC_01_Map_Obj_09 "CRC";
+CM_ SG_ 2566883582 CRC_00_Map_Obj_09 "CRC";
+CM_ SG_ 2566883582 MAP_19_ObjectType "Object type";
+CM_ SG_ 2566883582 MAP_19_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883582 MAP_19_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883582 MAP_19_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883582 MAP_19_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883582 MAP_19_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883582 MAP_09_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883582 MAP_09_ObjectType "Object type";
+CM_ SG_ 2566883582 MAP_09_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883582 MAP_09_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883582 MAP_09_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883582 MAP_09_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883582 Multiplex_ID_09 "Multiplexer";
+CM_ BO_ 2566883326 "MAP: infos for objects 8 and 18";
+CM_ SG_ 2566883326 MessageCounter_Map_Obj_08 "Counter";
+CM_ SG_ 2566883326 CRC_01_Map_Obj_08 "CRC";
+CM_ SG_ 2566883326 CRC_00_Map_Obj_08 "CRC";
+CM_ SG_ 2566883326 MAP_18_ObjectType "Object type";
+CM_ SG_ 2566883326 MAP_18_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883326 MAP_18_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883326 MAP_18_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883326 MAP_18_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883326 MAP_18_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883326 MAP_08_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883326 MAP_08_ObjectType "Object type";
+CM_ SG_ 2566883326 MAP_08_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883326 MAP_08_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883326 MAP_08_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883326 MAP_08_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883326 Multiplex_ID_08 "Multiplexer";
+CM_ BO_ 2566883070 "MAP: infos for objects 7 and 17";
+CM_ SG_ 2566883070 MessageCounter_Map_Obj_07 "Counter";
+CM_ SG_ 2566883070 CRC_01_Map_Obj_07 "CRC";
+CM_ SG_ 2566883070 CRC_00_Map_Obj_07 "CRC";
+CM_ SG_ 2566883070 MAP_17_ObjectType "Object type";
+CM_ SG_ 2566883070 MAP_17_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883070 MAP_17_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883070 MAP_17_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883070 MAP_17_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883070 MAP_17_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883070 MAP_07_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566883070 MAP_07_ObjectType "Object type";
+CM_ SG_ 2566883070 MAP_07_ExistProbability "Existence probability of object";
+CM_ SG_ 2566883070 MAP_07_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566883070 MAP_07_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566883070 MAP_07_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566883070 Multiplex_ID_07 "Multiplexer";
+CM_ BO_ 2566882814 "MAP: infos for objects 6 and 16";
+CM_ SG_ 2566882814 MessageCounter_Map_Obj_06 "Counter";
+CM_ SG_ 2566882814 CRC_01_Map_Obj_06 "CRC";
+CM_ SG_ 2566882814 CRC_00_Map_Obj_06 "CRC";
+CM_ SG_ 2566882814 MAP_16_ObjectType "Object type";
+CM_ SG_ 2566882814 MAP_16_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882814 MAP_16_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882814 MAP_16_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882814 MAP_16_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882814 MAP_16_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882814 MAP_06_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882814 MAP_06_ObjectType "Object type";
+CM_ SG_ 2566882814 MAP_06_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882814 MAP_06_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882814 MAP_06_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882814 MAP_06_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882814 Multiplex_ID_06 "Multiplexer";
+CM_ BO_ 2566882558 "MAP: infos for objects 5 and 15";
+CM_ SG_ 2566882558 MessageCounter_Map_Obj_05 "Counter";
+CM_ SG_ 2566882558 CRC_01_Map_Obj_05 "CRC";
+CM_ SG_ 2566882558 CRC_00_Map_Obj_05 "CRC";
+CM_ SG_ 2566882558 MAP_15_ObjectType "Object type";
+CM_ SG_ 2566882558 MAP_15_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882558 MAP_15_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882558 MAP_15_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882558 MAP_15_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882558 MAP_15_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882558 MAP_05_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882558 MAP_05_ObjectType "Object type";
+CM_ SG_ 2566882558 MAP_05_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882558 MAP_05_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882558 MAP_05_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882558 MAP_05_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882558 Multiplex_ID_05 "Multiplexer";
+CM_ BO_ 2566882046 "MAP: infos for objects 3 and 13";
+CM_ SG_ 2566882046 MessageCounter_Map_Obj_03 "Counter";
+CM_ SG_ 2566882046 CRC_01_Map_Obj_03 "CRC";
+CM_ SG_ 2566882046 CRC_00_Map_Obj_03 "CRC";
+CM_ SG_ 2566882046 MAP_13_ObjectType "Object type";
+CM_ SG_ 2566882046 MAP_13_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882046 MAP_13_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882046 MAP_13_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882046 MAP_13_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882046 MAP_13_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882046 MAP_03_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882046 MAP_03_ObjectType "Object type";
+CM_ SG_ 2566882046 MAP_03_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882046 MAP_03_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882046 MAP_03_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882046 MAP_03_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882046 Multiplex_ID_03 "Multiplexer";
+CM_ BO_ 2566882302 "MAP: infos for objects 4 and 14";
+CM_ SG_ 2566882302 Multiplex_ID_04 "Multiplexer";
+CM_ SG_ 2566882302 MessageCounter_Map_Obj_04 "Counter";
+CM_ SG_ 2566882302 CRC_01_Map_Obj_04 "CRC";
+CM_ SG_ 2566882302 CRC_00_Map_Obj_04 "CRC";
+CM_ SG_ 2566882302 MAP_14_ObjectType "Object type";
+CM_ SG_ 2566882302 MAP_14_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882302 MAP_14_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882302 MAP_14_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882302 MAP_14_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882302 MAP_14_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566882302 MAP_04_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566882302 MAP_04_ObjectType "Object type";
+CM_ SG_ 2566882302 MAP_04_ExistProbability "Existence probability of object";
+CM_ SG_ 2566882302 MAP_04_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566882302 MAP_04_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566882302 MAP_04_1stPointX "X coordinate of the first point of the object";
+CM_ BO_ 2566881790 "MAP: infos for objects 2 and 12";
+CM_ SG_ 2566881790 Multiplex_ID_02 "Multiplexer";
+CM_ SG_ 2566881790 MessageCounter_Map_Obj_02 "Counter";
+CM_ SG_ 2566881790 CRC_01_Map_Obj_02 "CRC";
+CM_ SG_ 2566881790 CRC_00_Map_Obj_02 "CRC";
+CM_ SG_ 2566881790 MAP_12_ObjectType "Object type";
+CM_ SG_ 2566881790 MAP_12_ExistProbability "Existence probability of object";
+CM_ SG_ 2566881790 MAP_12_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566881790 MAP_12_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566881790 MAP_12_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566881790 MAP_12_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566881790 MAP_02_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566881790 MAP_02_ObjectType "Object type";
+CM_ SG_ 2566881790 MAP_02_ExistProbability "Existence probability of object";
+CM_ SG_ 2566881790 MAP_02_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566881790 MAP_02_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566881790 MAP_02_1stPointX "X coordinate of the first point of the object";
+CM_ BO_ 2566881534 "MAP: infos for objects 1 and 11";
+CM_ SG_ 2566881534 MessageCounter_Map_Obj_01 "Counter";
+CM_ SG_ 2566881534 CRC_01_Map_Obj_01 "CRC";
+CM_ SG_ 2566881534 CRC_00_Map_Obj_01 "CRC";
+CM_ SG_ 2566881534 MAP_11_ObjectType "Object type";
+CM_ SG_ 2566881534 MAP_11_ExistProbability "Existence probability of object";
+CM_ SG_ 2566881534 MAP_11_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566881534 MAP_11_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566881534 MAP_11_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566881534 MAP_11_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566881534 MAP_01_1stPointY "Y coordinate of the first point of the object";
+CM_ SG_ 2566881534 MAP_01_ObjectType "Object type";
+CM_ SG_ 2566881534 MAP_01_ExistProbability "Existence probability of object";
+CM_ SG_ 2566881534 MAP_01_2ndPointY "Y coordinate of the second point of the object";
+CM_ SG_ 2566881534 MAP_01_2ndPointX "X coordinate of the second point of the object";
+CM_ SG_ 2566881534 MAP_01_1stPointX "X coordinate of the first point of the object";
+CM_ SG_ 2566881534 Multiplex_ID_01 "Multiplexer";
+CM_ BO_ 2566880766 "Current sensor detection ranges";
+CM_ SG_ 2566880766 CRC_MaxDetRange "CRC";
+CM_ SG_ 2566880766 MessageCntr_MaxDetRange "Counter";
+CM_ SG_ 2566880766 sens12_MaxDetRange "Current sensor detection range for sensor 12";
+CM_ SG_ 2566880766 sens11_MaxDetRange "Current sensor detection range for sensor 11";
+CM_ SG_ 2566880766 sens10_MaxDetRange "Current sensor detection range for sensor 10";
+CM_ SG_ 2566880766 sens09_MaxDetRange "Current sensor detection range for sensor 9";
+CM_ SG_ 2566880766 sens08_MaxDetRange "Current sensor detection range for sensor 8";
+CM_ SG_ 2566880766 sens07_MaxDetRange "Current sensor detection range for sensor 7";
+CM_ SG_ 2566880766 sens06_MaxDetRange "Current sensor detection range for sensor 6";
+CM_ SG_ 2566880766 sens05_MaxDetRange "Current sensor detection range for sensor 5";
+CM_ SG_ 2566880766 sens04_MaxDetRange "Current sensor detection range for sensor 4";
+CM_ SG_ 2566880766 sens03_MaxDetRange "Current sensor detection range for sensor 3";
+CM_ SG_ 2566880766 sens02_MaxDetRange "Current sensor detection range for sensor 2Current sensor detection range for sensor 1";
+CM_ SG_ 2566880766 sens01_MaxDetRange "Current sensor detection range for sensor 1";
+CM_ BO_ 2566880510 "Message with status information";
+CM_ SG_ 2566880510 FailureStatus "Failure status";
+CM_ SG_ 2566880510 OperatingModeInfo "Operating Mode Info";
+CM_ SG_ 2566880510 SensorFaulted "Bit position of faulted sensorsBit position of faulted sensors.";
+CM_ SG_ 2566880510 SensitivityInfo "Sensitivity Info";
+CM_ SG_ 2566880510 SensorBlindnessInfo "Bit position of blinded sensor ";
+CM_ SG_ 2566880510 OutsideTemperatureInfo "Outside Temperature";
+CM_ SG_ 2566880510 SendingPatternInfo "Sending pattern Info";
+CM_ SG_ 2566880510 NumberSensorsInfo "Number of Sensor Info";
+CM_ SG_ 2566880510 MessageCntr_USSInfoSig "Counter";
+CM_ SG_ 2566880510 CRC_USSInfoSig "CRC";
+CM_ BO_ 2566880254 "Direct echo data of sensor 12";
+CM_ SG_ 2566880254 sens12FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566880254 MessageCounter_DEMsg_Sens_12 "Counter";
+CM_ SG_ 2566880254 CRC_DEMsg_Sens_12 "CRC";
+CM_ SG_ 2566880254 sens12De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566880254 sens12De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566880254 sens12De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566880254 sens12Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566880254 sens12Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566879998 "Direct echo data of sensor 11";
+CM_ SG_ 2566879998 sens11FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566879998 MessageCounter_DEMsg_Sens_11 "Counter";
+CM_ SG_ 2566879998 CRC_DEMsg_Sens_11 "CRC";
+CM_ SG_ 2566879998 sens11De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566879998 sens11De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566879998 sens11De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566879998 sens11Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566879998 sens11Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566879742 "Direct echo data of sensor 10";
+CM_ SG_ 2566879742 sens10FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566879742 MessageCounter_DEMsg_Sens_10 "Counter";
+CM_ SG_ 2566879742 CRC_DEMsg_Sens_10 "CRC";
+CM_ SG_ 2566879742 sens10De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566879742 sens10De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566879742 sens10De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566879742 sens10Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566879742 sens10Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566879486 "Direct echo data of sensor 9";
+CM_ SG_ 2566879486 sens09FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566879486 MessageCounter_DEMsg_Sens_09 "Counter";
+CM_ SG_ 2566879486 CRC_DEMsg_Sens_09 "CRC";
+CM_ SG_ 2566879486 sens09De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566879486 sens09De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566879486 sens09De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566879486 sens09Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566879486 sens09Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566879230 "Direct echo data of sensor 8";
+CM_ SG_ 2566879230 sens08FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566879230 MessageCounter_DEMsg_Sens_08 "Counter";
+CM_ SG_ 2566879230 CRC_DEMsg_Sens_08 "CRC";
+CM_ SG_ 2566879230 sens08De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566879230 sens08De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566879230 sens08De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566879230 sens08Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566879230 sens08Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566878974 "Direct echo data of sensor 7";
+CM_ SG_ 2566878974 sens07FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566878974 MessageCounter_DEMsg_Sens_07 "Counter";
+CM_ SG_ 2566878974 CRC_DEMsg_Sens_07 "CRC";
+CM_ SG_ 2566878974 sens07De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566878974 sens07De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566878974 sens07De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566878974 sens07Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566878974 sens07Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566878718 "Direct echo data of sensor 6";
+CM_ SG_ 2566878718 sens06FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566878718 MessageCounter_DEMsg_Sens_06 "Counter";
+CM_ SG_ 2566878718 CRC_DEMsg_Sens_06 "CRC";
+CM_ SG_ 2566878718 sens06De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566878718 sens06De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566878718 sens06De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566878718 sens06Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566878718 sens06Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566878462 "Direct echo data of sensor 5";
+CM_ SG_ 2566878462 sens05Amplitude1 "Amplitude of De1Distance";
+CM_ SG_ 2566878462 sens05FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566878462 MessageCounter_DEMsg_Sens_05 "Counter";
+CM_ SG_ 2566878462 CRC_DEMsg_Sens_05 "CRC";
+CM_ SG_ 2566878462 sens05De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566878462 sens05De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566878462 sens05De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566878462 sens05Amplitude2 "Amplitude of De2Distance";
+CM_ BO_ 2566878206 "Direct echo data of sensor 4";
+CM_ SG_ 2566878206 MessageCounter_DEMsg_Sens_04 "Counter";
+CM_ SG_ 2566878206 CRC_DEMsg_Sens_04 "CRC";
+CM_ SG_ 2566878206 sens04FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566878206 sens04Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566878206 sens04Amplitude1 "Amplitude of De1Distance";
+CM_ SG_ 2566878206 sens04De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566878206 sens04De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566878206 sens04De1Distance "1st measured direct echo distance";
+CM_ BO_ 2566877950 "Direct echo data of sensor 3";
+CM_ SG_ 2566877950 MessageCounter_DEMsg_Sens_03 "Counter";
+CM_ SG_ 2566877950 CRC_DEMsg_Sens_03 "CRC";
+CM_ SG_ 2566877950 sens03FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566877950 sens03Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566877950 sens03Amplitude1 "Amplitude of De1Distance";
+CM_ SG_ 2566877950 sens03De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566877950 sens03De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566877950 sens03De1Distance "1st measured direct echo distance";
+CM_ BO_ 2566877694 "Direct echo data of sensor 2";
+CM_ SG_ 2566877694 MessageCounter_DEMsg_Sens_02 "Counter";
+CM_ SG_ 2566877694 CRC_DEMsg_Sens_02 "CRC";
+CM_ SG_ 2566877694 sens02De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566877694 sens02Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566877694 sens02FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566877694 sens02De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566877694 sens02De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566877694 sens02Amplitude1 "Amplitude of De1Distance";
+CM_ BO_ 2566877438 "Direct echo data of sensor 1";
+CM_ SG_ 2566877438 sens01FilteredAmplitude1 "Amplitude of De1FilteredDistance";
+CM_ SG_ 2566877438 MessageCounter_DEMsg_Sens_01 "Counter";
+CM_ SG_ 2566877438 CRC_DEMsg_Sens_01 "CRC";
+CM_ SG_ 2566877438 sens01De1FilteredDistance "1st measured echo distance with special filter for a stable distance signal";
+CM_ SG_ 2566877438 sens01De2Distance "2nd measured direct echo distance";
+CM_ SG_ 2566877438 sens01De1Distance "1st measured direct echo distance";
+CM_ SG_ 2566877438 sens01Amplitude2 "Amplitude of De2Distance";
+CM_ SG_ 2566877438 sens01Amplitude1 "Amplitude of De1Distance";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","noMsgSendType";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_  "SAE_J1939_DA_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_81_SpecVersion" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "SAE_J1939_75_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_21_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_73_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_71_SpecVersion" STRING ;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "SAE_J1939_DA_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_81_SpecVersion" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "SAE_J1939_75_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_21_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_73_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_71_SpecVersion" "";
+BA_ "SAE_J1939_DA_SpecVersion" "2017-01";
+BA_ "SAE_J1939_81_SpecVersion" "2017-01";
+BA_ "DatabaseVersion" "10.0";
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "J1939";
+BA_ "SAE_J1939_75_SpecVersion" "2017-01";
+BA_ "SAE_J1939_21_SpecVersion" "2017-01";
+BA_ "SAE_J1939_73_SpecVersion" "2017-01";
+BA_ "SAE_J1939_71_SpecVersion" "2017-01";
+BA_ "DBName" "COTS_USS_PREMIUM_J1939";
+BA_ "NmStationAddress" BU_ PF_PP 3;
+BA_ "NmStationAddress" BU_ HMI 2;
+BA_ "NmStationAddress" BU_ CUST 1;
+BA_ "NmStationAddress" BU_ USS_ECU 150;
+BA_ "NmJ1939AAC" BU_ USS_ECU 1;
+BA_ "NmJ1939IndustryGroup" BU_ USS_ECU 0;
+BA_ "VFrameFormat" BO_ 2564487807 1;
+BA_ "VFrameFormat" BO_ 2564456442 1;
+BA_ "VFrameFormat" BO_ 2566851070 3;
+BA_ "VFrameFormat" BO_ 2566902014 3;
+BA_ "VFrameFormat" BO_ 2566889726 3;
+BA_ "VFrameFormat" BO_ 2566889982 3;
+BA_ "VFrameFormat" BO_ 2566883838 3;
+BA_ "VFrameFormat" BO_ 2566883582 3;
+BA_ "VFrameFormat" BO_ 2566883326 3;
+BA_ "VFrameFormat" BO_ 2566883070 3;
+BA_ "VFrameFormat" BO_ 2566882814 3;
+BA_ "VFrameFormat" BO_ 2566882558 3;
+BA_ "VFrameFormat" BO_ 2566882046 3;
+BA_ "VFrameFormat" BO_ 2566882302 3;
+BA_ "VFrameFormat" BO_ 2566881790 3;
+BA_ "VFrameFormat" BO_ 2566881534 3;
+BA_ "VFrameFormat" BO_ 2566880766 3;
+BA_ "VFrameFormat" BO_ 2566880510 3;
+BA_ "VFrameFormat" BO_ 2566880254 3;
+BA_ "VFrameFormat" BO_ 2566879998 3;
+BA_ "VFrameFormat" BO_ 2566879742 3;
+BA_ "VFrameFormat" BO_ 2566879486 3;
+BA_ "VFrameFormat" BO_ 2566879230 3;
+BA_ "VFrameFormat" BO_ 2566878974 3;
+BA_ "VFrameFormat" BO_ 2566878718 3;
+BA_ "VFrameFormat" BO_ 2566878462 3;
+BA_ "VFrameFormat" BO_ 2566878206 3;
+BA_ "VFrameFormat" BO_ 2566877950 3;
+BA_ "VFrameFormat" BO_ 2566877694 3;
+BA_ "VFrameFormat" BO_ 2566877438 3;
+BA_ "GenSigStartValue" SG_ 2566851070 signalTLA 0;
+BA_ "SigType" SG_ 2566851070 signalTLA 3;
+BA_ "GenSigStartValue" SG_ 2566902014 OutsideTemperature 40;
+BA_ "GenSigStartValue" SG_ 2566881790 MAP_12_1stPointX 0;
+BA_ "GenSigStartValue" SG_ 2566881790 MAP_02_1stPointX 0;
+BA_ "GenSigStartValue" SG_ 2566881534 MAP_01_1stPointX 0;
+BA_ "GenSigStartValue" SG_ 2566880510 OutsideTemperatureInfo 40;
+VAL_ 2566889726 sens02CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens02CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens02CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens02CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens03CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens03CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens03CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens03CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens04CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens04CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens04CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens04CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens05CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens05CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens05CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens05CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens06CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens06CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens06CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens06CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens07CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens07CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens07CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens07CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens08CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens08CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens08CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens08CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens09CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens09CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens09CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens09CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens10CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens10CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens10CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens10CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens11CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens11CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens11CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens11CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens12CeLeftAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens12CeLeft2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889726 sens12CeLeftAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889726 sens12CeLeft1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens02CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens02CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens02CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens02CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens03CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens03CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens03CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens03CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens04CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens04CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens04CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens04CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens05CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens05CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens05CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens05CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens06CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens06CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens06CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens06CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens07CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens07CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens07CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens07CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens08CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens08CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens08CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens08CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens09CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens09CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens09CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens09CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens10CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens10CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens10CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens10CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens11CeRightAmplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens11CeRight2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566889982 sens11CeRightAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566889982 sens11CeRight1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566883838 MAP_20_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883838 MAP_20_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883838 MAP_10_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883838 MAP_10_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883582 MAP_19_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883582 MAP_19_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883582 MAP_09_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883582 MAP_09_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883326 MAP_18_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883326 MAP_18_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883326 MAP_08_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883326 MAP_08_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883070 MAP_17_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883070 MAP_17_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566883070 MAP_07_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566883070 MAP_07_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882814 MAP_16_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882814 MAP_16_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882814 MAP_06_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882814 MAP_06_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882558 MAP_15_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882558 MAP_15_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882558 MAP_05_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882558 MAP_05_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882046 MAP_13_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882046 MAP_13_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882046 MAP_03_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882046 MAP_03_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882302 MAP_14_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882302 MAP_14_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566882302 MAP_04_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566882302 MAP_04_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566881790 MAP_12_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566881790 MAP_12_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566881790 MAP_02_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566881790 MAP_02_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566881534 MAP_11_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566881534 MAP_11_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566881534 MAP_01_ObjectType 3 "SNA" 2 "Line" 1 "Point" 0 "None" ;
+VAL_ 2566881534 MAP_01_ExistProbability 7 "100%" 6 "80%" 5 "60%" 4 "40%" 3 "30%" 2 "23%" 1 "17%" 0 "0%" ;
+VAL_ 2566880254 sens12FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566880254 sens12De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566880254 sens12De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566880254 sens12De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566880254 sens12Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566880254 sens12Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879998 sens11FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879998 sens11De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879998 sens11De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879998 sens11De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879998 sens11Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879998 sens11Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879742 sens10FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879742 sens10De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879742 sens10De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879742 sens10De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879742 sens10Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879742 sens10Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879486 sens09FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879486 sens09De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879486 sens09De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879486 sens09De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879486 sens09Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879486 sens09Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879230 sens08FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879230 sens08De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879230 sens08De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879230 sens08De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566879230 sens08Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566879230 sens08Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878974 sens07FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878974 sens07De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878974 sens07De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878974 sens07De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878974 sens07Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878974 sens07Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878718 sens06FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878718 sens06De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878718 sens06De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878718 sens06De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878718 sens06Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878718 sens06Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878462 sens05Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878462 sens05FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878462 sens05De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878462 sens05De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878462 sens05De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878462 sens05Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878206 sens04FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878206 sens04Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878206 sens04Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566878206 sens04De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878206 sens04De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566878206 sens04De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877950 sens03FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877950 sens03Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877950 sens03Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877950 sens03De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877950 sens03De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877950 sens03De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877694 sens02De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877694 sens02Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877694 sens02FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877694 sens02De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877694 sens02De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877694 sens02Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877438 sens01FilteredAmplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877438 sens01De1FilteredDistance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877438 sens01De2Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877438 sens01De1Distance 1023 "Sna" 1022 "SensorFaulted" 1021 "SensorBlind" 1003 "NoObject" 1002 "PresenceDetection" ;
+VAL_ 2566877438 sens01Amplitude2 63 "Sna" 62 "No object" 61 "Presence detection" ;
+VAL_ 2566877438 sens01Amplitude1 63 "Sna" 62 "No object" 61 "Presence detection" ;
+
