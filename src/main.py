@@ -1,4 +1,11 @@
-from can_reader import CANReader
+"""
+Currently terrible code.
+Needs a rework, cleanup and extract configs to a config file.
+
+But it is what it is. Gotta move fast
+"""
+
+from can_reader import CANReaderN
 from dbc_decoder import DBCDecoder
 from visualizer import Visualizer
 
