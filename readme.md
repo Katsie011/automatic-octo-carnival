@@ -14,6 +14,7 @@ This repo interfaces with an array of 8 ultrasonic sensors over CAN, decodes mes
 - macOS (tested on Darwin 24.x)
 - Python deps: see `requirements.txt`
 - CAN USB interface supported by the included `PCANBasic.py`/`libs/PCBUSB 3`
+  - `C` binaries were downloaded from [mac-can](https://www.mac-can.com) for mac support of PEAK-CAN
 
 Install Python dependencies:
 

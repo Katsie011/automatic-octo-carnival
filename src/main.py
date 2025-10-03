@@ -14,6 +14,8 @@ from rich.table import Table
 
 import logging
 import os
+from typing import Any, Dict, Optional, Set, Tuple
+from time import time
 
 from config import (
     TARGET_SIGNALS,
@@ -26,7 +28,8 @@ from config import (
 
 console = Console()
 
-filtered_signals = TARGET_SIGNALS
+# Work with a per-run copy of target signals to avoid mutating config globals
+filtered_signals: Dict[str, Any] = TARGET_SIGNALS.copy()
 
 # Set up logger to write decoded signals to ../logs/run_logs.txt
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -39,73 +42,101 @@ logging.basicConfig(
 logger = logging.getLogger("decoded_signals")
 
 
-def main():
+def _render_table(all_signal_names: Set[str], latest_values: Dict[str, Any]) -> None:
+    """Render a table of known signals and their latest values."""
+    if not all_signal_names:
+        return
+    table = Table(title="Filtered Distance Values")
+    table.add_column("Signal", style="cyan", no_wrap=True)
+    table.add_column("Value", style="magenta")
+    for signal_name in sorted(all_signal_names):
+        value = latest_values.get(signal_name, "N/A")
+        table.add_row(str(signal_name), str(value))
+    console.clear()
+    console.print(table)
+
+
+def _normalize_for_visualizer(
+    values: Dict[str, Any], num_sensors: int
+) -> Dict[str, Any]:
+    """
+    Build a dict with keys expected by Visualizer:
+    sens00..sens{num_sensors-1}De1FilteredDistance.
+
+    Accepts either 1-based (sens01..sens08) or 0-based (sens00..sens07) inputs.
+    Falls back to 0 for missing values and maps "Dist1" to sensor 0 if present.
+    """
+    normalized: Dict[str, Any] = {}
+    for i in range(num_sensors):
+        zero_based_key = f"sens{str(i).zfill(2)}De1FilteredDistance"
+        one_based_key = f"sens{str(i + 1).zfill(2)}De1FilteredDistance"
+        if zero_based_key in values:
+            normalized[zero_based_key] = values[zero_based_key]
+        elif one_based_key in values:
+            normalized[zero_based_key] = values[one_based_key]
+        else:
+            normalized[zero_based_key] = 0
+
+    # Optionally map Dist1 to sens00 if sens00 has no explicit value
+    if num_sensors > 0:
+        k0 = f"sens00De1FilteredDistance"
+        if (k0 not in values or values.get(k0, 0) in (0, -1)) and ("Dist1" in values):
+            normalized[k0] = values["Dist1"]
+
+    return normalized
+
+
+def main() -> None:
     reader = CANReader()
-    decoder = DBCDecoder(DBC_FILE_PATH)  # TODO: Replace hardcoded path.
+    decoder = DBCDecoder(DBC_FILE_PATH)
     vis = Visualizer(num_sensors=NUM_SENSORS)
 
-    import time
-
-    # Keep track of all possible sens0XDe1FilteredDistance signals seen so far
-    all_signals = set()
-    signal_values = {}
+    # Track known signal names and last non -1 values for display
+    all_signal_names: Set[str] = set()
+    latest_values: Dict[str, Any] = {}
 
     try:
-        last_table_update = 0
-        update_interval = TABLE_UPDATE_INTERVAL  # 200ms
+        last_table_update: float = 0.0
+        update_interval: float = TABLE_UPDATE_INTERVAL
 
         while True:
-            frame = reader.read_message()
-            if frame:
-                can_id, data = frame
-                decoded = decoder.decode(can_id, data)
-                if decoded:
-                    # Log the decoded signals to the log file
-                    logger.info(f"Decoded signals: {decoded}")
+            frame: Optional[Tuple[int, bytes]] = reader.read_message()
+            if not frame:
+                continue
 
-                    # Collect all sens0XDe1FilteredDistance values
-                    # Filter signals using the names in TARGET_SIGNALS
-                    # Update filtered_signals in-place with any new values from decoded
-                    updated = False
-                    for k in TARGET_SIGNALS:
-                        if k in decoded:
-                            filtered_signals[k] = decoded[k]
-                            updated = True
+            can_id, data = frame
+            decoded = decoder.decode(can_id, data)
+            if not decoded:
+                continue
 
-                    # Update the set of all signals and their latest values
-                    for k, v in filtered_signals.items():
-                        if v != -1:
-                            all_signals.add(k)
-                            signal_values[k] = v
+            logger.info("Decoded signals: %s", decoded)
 
-                    # Only update and print the table if we have any signals
-                    now = time.time()
-                    if all_signals and (now - last_table_update) >= update_interval:
-                        # Re-create the table each time to avoid IndexError
-                        table = Table(title="Filtered Distance Values")
-                        table.add_column("Signal", style="cyan", no_wrap=True)
-                        table.add_column("Value", style="magenta")
-                        # Add rows for all known signals, sorted
-                        for k in sorted(all_signals):
-                            v = signal_values.get(k, "N/A")
-                            table.add_row(str(k), str(v))
-                        # Only print the table if there are rows to display
-                        num_rows = len(all_signals)
-                        print(f"table.rows={num_rows}")
-                        if num_rows > 0:
-                            console.clear()
-                            console.print(table)
-                        last_table_update = now
+            updated: bool = False
+            for key in TARGET_SIGNALS:
+                if key in decoded:
+                    filtered_signals[key] = decoded[key]
+                    updated = True
 
-                    # Use the filtered_signals dict for the sensor values
-                    # Only update the visualizer if any values have changed
-                    if updated:
-                        console.print("Filtered signals are:", filtered_signals)
-                        vis.update(filtered_signals)
+            for key, value in filtered_signals.items():
+                if value != -1:
+                    all_signal_names.add(key)
+                    latest_values[key] = value
+
+            now = time()
+            if all_signal_names and (now - last_table_update) >= update_interval:
+                _render_table(all_signal_names, latest_values)
+                last_table_update = now
+
+            if updated:
+                vis_values = _normalize_for_visualizer(filtered_signals, NUM_SENSORS)
+                vis.update(vis_values)
     except KeyboardInterrupt:
         print("Stopping...")
     finally:
-        reader.close()
+        try:
+            reader.close()
+        except Exception:
+            pass
 
 
 if __name__ == "__main__":
